@@ -7,7 +7,7 @@ public class TesteFuncionario2 {
 	public static void main(String[] args) {
 		Funcionario funcionario = new Funcionario();
 		
-		funcionario.nomeFuncionario = (Teclado.lerTexto("Digite o nome do funcionario: "));
+		funcionario.setNomeFuncionario(Teclado.lerTexto("Digite o nome do funcionario: "));
 		
 		
 		int num;
@@ -17,15 +17,15 @@ public class TesteFuncionario2 {
 			switch (num) {
 			
 			case 1:
-			funcionario.salario =(Teclado.lerDouble("Digite o novo salario: "));
+			funcionario.setSalario(Teclado.lerDouble("Digite o novo salario: "));
 			break;
 			
 			case 2:
-			funcionario.nomeFuncionario =(Teclado.lerTexto("Digite o nome do funcionario: "));
+			funcionario.setNomeFuncionario (Teclado.lerTexto("Digite o nome do funcionario: "));
 			break;
 		
 			case 3:
-			System.out.println(funcionario.consultaDadosFuncionari()); 
+			System.out.println(funcionario.consultaDadosFuncionario()); 
 			
 			break;
 			
