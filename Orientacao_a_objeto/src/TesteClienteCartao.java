@@ -3,9 +3,9 @@ public class TesteClienteCartao {
 
 	public static void main(String[] args) {
 		Cliente cli = new Cliente();
-		CartaoCredito cdc = new CartaoCredito();
+		CartaoCredito cdc = new CartaoCredito(12345674);
 		cli.nome = "Daniela";
-		cdc.numero = 12345674;
+		
 		cdc.dataDeValidade = "21/07/2025";
 		cdc.cliente = cli;
 
