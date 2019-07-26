@@ -2,11 +2,10 @@
 public class TesteAgencia {
 
 	public static void main(String[] args) {
-		Agencia agencia1 = new Agencia();
-		Agencia agencia2 = new Agencia();
+		Agencia agencia1 = new Agencia(214563);
+		Agencia agencia2 = new Agencia(214578);
 		
-		agencia1.numero = 214563;
-		agencia2.numero = 214578;
+		
 		
 		System.out.println("***** Agencia 1 *******");
 		System.out.println("Número: " + agencia1.numero);

@@ -5,9 +5,16 @@ public class Conta {
 	double limite = 100;
 	Agencia agencia;
 
+	public static int qtdContas;
+
 	public Conta(int numero) {
 		super();
-		this.numero = numero;
+		this.numero = qtdContas;
+	}
+	
+	public static void ZerarContador() {
+	
+		qtdContas = 0;
 	}
 
 	double depoisitar(double valor) {
@@ -26,4 +33,8 @@ public class Conta {
 		return this.saldo + this.limite;
 	}
 
+	static void TraferenciaEntreContas(int Valor, Conta ContaTrasferencia, Conta ContaRecebe) {
+		ContaTrasferencia.saldo -= Valor;
+		ContaRecebe.saldo += Valor;
+	}
 }
