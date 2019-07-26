@@ -3,7 +3,8 @@ public class Funcionario {
 	private String nomeFuncionario;
 	private double salario = 1000;
 	private double valeRefeicao;
-
+	String entrada;
+	String saida;
 	
 	
 	
@@ -30,6 +31,13 @@ public class Funcionario {
 
 	public void setValeRefeicao(double valeRefeicao) {
 		this.valeRefeicao = valeRefeicao;
+	}
+	public void RegistraEntrada(String entrada) {
+		this.entrada = entrada;
+	}
+	
+	public void RegistraSaida(String saida) {
+		this.saida = saida;
 	}
 
 	double aumentoSalario(double valor) {
